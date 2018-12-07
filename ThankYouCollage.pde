@@ -22,7 +22,7 @@ void setup() {
 }
 
 void draw() {
-  text("HOLD BUTTON",130,80);
+ // text("HOLD BUTTON",130,80);
   img =   loadImage("b.png");
   image(img,26,27,100,100);{
 fill(X,0,0,130);
