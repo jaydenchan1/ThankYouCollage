@@ -25,11 +25,11 @@ void setup() {
 
 void draw() {
 image(img,0,0);
-image(img2,26,27,100,100);
+//image(img2,26,27,100,100);
 
  // text("HOLD BUTTON",130,80);
-  img =   loadImage("b.png");
-  image(img,26,27,100,100);{
+ 
+  image(img2,26,27,100,100);{
 fill(X,0,0,130);
   noStroke();
   ellipse(75, 75, 60, 60); }
