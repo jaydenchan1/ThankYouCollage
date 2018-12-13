@@ -1,4 +1,6 @@
 //add thank you code here
+/* @pjs preload-"a.jpg"; */
+/* @pjs preload-"b.png"; */
 PImage img;
 int X = 255;
 int Y = -50;
