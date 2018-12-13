@@ -2,6 +2,7 @@
 /* @pjs preload-"a.jpg"; */
 /* @pjs preload-"b.png"; */
 PImage img;
+PImage img2;
 int X = 255;
 int Y = -50;
 int Z = 1;
@@ -10,12 +11,11 @@ int Z = 1;
 void setup() {
   size(460,345);
   frameRate(30);
-    img =   loadImage("w.png");
-  image(img,100,100,100,100);
+   
   img =   loadImage("a.jpg");
-  image(img,0,0);
-  img =   loadImage("b.png");
-  image(img,26,27,100,100);
+  
+  img2 =   loadImage("b.png");
+  
   textSize(33);
   smooth();
    
@@ -24,6 +24,9 @@ void setup() {
 }
 
 void draw() {
+image(img,0,0);
+image(img2,26,27,100,100);
+
  // text("HOLD BUTTON",130,80);
   img =   loadImage("b.png");
   image(img,26,27,100,100);{
@@ -46,8 +49,7 @@ fill(X,0,0,130);
 
 void mousePressed() {
   if (X == 255){
-  { 
-  } X = 0;
+   X = 0;
   } else {
     X = 255;
   }
